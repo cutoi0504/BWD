@@ -1,0 +1,470 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/54f0cb7e4a.js" crossorigin="anonymous"></script>
+    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous"> -->
+    <title>Du lịch muôn nơi</title>
+
+</head>
+<body>
+    <header>
+        <div class="header-top">
+            <i class="fas fa-bars"></i>
+            <ul>
+                <li style="--x:1;"><a href="">Trang chủ</a></li>
+                <li style="--x:2;"><a href="">Đặc điểm</a></li>
+                <li style="--x:3;"><a href="">Về chúnhg tôi</a></li>
+                <li style="--x:4;"><a href="">Bộ sưu tập</a></li>
+                <li style="--x:5;"><a href="">Đánh giá</a></li>
+                <li style="--x:6;"><a href="">Liên hệ</a></li>
+
+            </ul>
+        </div>
+
+        <div class="video-container">
+            <video src="Video/DulichVietnam.mp4" autoplay loop muted></video>
+        </div>
+
+        <div class="header-content">
+            <h1>Khám phá</h1>
+            <p>Xách ba lô lên và đi</p>
+            <form action="">
+                <h1>Bạn muốn đi đâu hè này?</h1>
+                <p>Địa điểm</p>
+                <select name="" id="">
+                    <option value="#">--Chọn địa điểm--</option>
+                    <option value="">Thành phố Hồ Chí Minh</option>
+                    <option value="">Thành phố Đà Nẵng</option>
+                    <option value="">Thành phố Hà Nội</option>
+                    <option value="">Động Phong Nha-Quảng Bình</option>
+                    <option value="">Vịnh Hạ Long</option>
+                </select>
+                <p>Số người đi</p>
+                <input type="number" type="text" min="1" placeholder="Bạn muốn đi bao nhiêu người">
+                <p>Ngày đi</p>
+                <input type="date" placeholder="Vui lòng chọn ngày đi">
+                <p>Ngày về</p>
+                <input type="date" placeholder="Vui lòng chọn ngày về">
+                <button class="btn">Tìm Kiếm</button>
+
+            </form>
+            
+
+        </div>
+    </header>
+
+
+    <!------------------------------ Nice Places ------------------------------>
+
+    <section class="nice-place">
+        <div class="container">
+            <h1 class="h1-style">Địa điểm nổi bật</h1>
+            <div class="nice-place-content row">
+
+                
+                <div class="nice-place-item">
+                    <div class="nice-place-img">
+                        <img src="Images/np1.jpg" alt="">
+                    </div>
+
+                    <div class="nice-place-text">
+                        <h2>Tour Tây Bắc</h2>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        
+                        <p>
+                            Theo kinh nghiệm du lịch Tây Bắc, mỗi mùa ở đây đều có những khung cảnh thiên nhiên, mang tới những trải nghiệm và cảm giác hoàn toàn khác nhau.
+                        </p>
+
+                        <button class="btn">Mua Tour</button>
+
+                    </div>
+
+                </div>
+
+                <!--  -->
+                <div class="nice-place-item">
+                    <div class="nice-place-img">
+                        <img src="Images/np2.jpg" alt="">
+                    </div>
+
+                    <div class="nice-place-text">
+                        <h2>Tour Hồ Chí Minh</h2>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <p> Thành phố Hồ Chí Minh (thường được gọi là Sài Gòn) là một thành phố ở miền nam Việt Nam nổi tiếng với vai trò nòng cốt trong chiến tranh Việt Nam. 
+                            
+                       </p>
+                        <button class="btn">Mua Tour</button>
+
+                    </div>
+
+                </div>
+
+
+            <!--  -->
+                <div class="nice-place-item">
+                    <div class="nice-place-img">
+                        <img src="Images/np3.jpg" alt=""> </div>
+
+                    <div class="nice-place-text">
+                        <h2>Tour Hà Nội</h2>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <p> Hà Nội, thủ đô của Việt Nam, nổi tiếng với kiến trúc trăm tuổi và nền văn hóa phong phú với sự ảnh hưởng của khu vực Đông Nam Á.
+                             <!-- Trung Quốc và Pháp. Trung tâm thành phố là Khu phố cổ nhộn nhịp, nơi các con phố hẹp được mang tên "hàng". Có rất nhiều ngôi đền nhỏ, 
+                             bao gồm Bạch Mã, tôn vinh một con ngựa huyền thoại, cùng với chợ Đồng Xuân, bán hàng gia dụng và thức ăn đường phố. -->
+                        </p>
+                        <button class="btn">Mua Tour</button>
+
+                    </div>
+
+                </div>
+                
+            </div>
+
+        </div>
+    </section>
+
+
+    <!-- ------------------ABOUT --------------------------->
+
+
+    <section class="about">
+        <div class="container">
+            <h1 class="h1-style">Về chúng tôi</h1>
+            <div class="about-content row">
+                <div class="about-content-left">
+                    <img src="Images/about.jpg" alt="">
+                </div>
+                <div class="about-content-right">
+
+                    <h2 class="h2-style">Tại sao bạn nên chọn chúng tôi?</h2>
+                    <p class="p-style">1.000 lí do tại sao bạn nên chọn đến với chúng tôi, có 1 thế giới tuyệt đẹp quanh ta hãy đến với chúng tôi. <br>
+                        Với nhiều năm kinh nghiệm tổ chức và triển khai các tour du lịch trong và ngoài nước, chúng tôi cam kết đem lại cho khách hàng
+                        những hành trình tuyệt vời và ấn tượng nhất thông qua những dịch vụ chuyên ngiệp mà chúng tôi thực hiện như:
+                    </p>
+                    <!-- <button class="btn">Tìm hiểu thêm</button> -->
+
+                </div>
+                <!-- ------------------The our services ----------------->
+                <div class="experience row">
+                    <div class="col-4">
+                        <div class="review-experience">
+                            <img src="Images/plane.png" alt="">
+                            <p class="p-style">Chuyến bay đẳng cấp</p>
+                        </div>
+                    </div>
+
+                    <div class="col-4">
+                        <div class="review-experience">
+                            <img src="Images/trip.png" alt="">
+                            <p class="p-style">Hành trình hấp dãn</p>
+                        </div>
+                    </div>
+
+                    <div class="col-4">
+                        <div class="review-experience">
+                            <img src="Images/time.png" alt="">
+                            <p class="p-style">Quản lí chặt chẽ</p>
+                        </div>
+                    </div>
+
+                    <div class="col-4">
+                        <div class="review-experience">
+                            <img src="Images/hotel.png" alt="">
+                            <p class="p-style">Khách sạn tiện nghi</p>
+                        </div>
+                    </div>
+
+                    <div class="col-4">
+                        <div class="review-experience">
+                            <img src="Images/quality.png" alt="">
+                            <p class="p-style">Chất lượng đỉnh cao</p>
+                        </div>
+                    </div>
+
+                    <div class="col-4">
+                        <div class="review-experience">
+                            <img src="Images/tour.png" alt="">
+                            <p class="p-style">Hơn 100 tour quốc tế</p>
+                        </div>
+                    </div>
+                </div>
+
+                <button class="btn">Tìm hiểu thêm</button>
+
+            </div>
+
+
+
+
+            <div class="service row">
+
+                <div class="service-item">
+                    <img src="Images/5-stars.png" alt="">
+                    <p class="p-style">Đặt phòng</p>
+                </div>
+
+                <div class="service-item">
+                    <img src="Images/24_7.png" alt="">
+                    <p class="p-style">Dịch vụ 24/7</p>
+                </div>
+
+                <div class="service-item">
+                    <img src="Images/user-guide.png" alt="">
+                    <p class="p-style">Guide-book</p>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+
+    <!-- ------------------Tour 2023 -------------------------------------------->
+    <section class="tour">
+        <div class="container">
+            <h1 class="h1-style">Tour hè 2023</h1>
+
+            <div class="tour-content row">
+
+                <div class="tour-content-item row">
+                    <div class="tour-content-item-img">
+                        <img src="Images/Hinh-anh-Da-Lat-suong-mu.jpg" alt="">
+                    </div>
+                    <div class="tour-content-item-text">
+                        <h2 class="h2-style">Đà Lạt</h2>
+                        <p class="p-style">Nhắc đến Đà Lạt, chắc hẳn khách du lịch không thể không nhớ đến những tên gọi mỹ miều như “thành phố nên thơ”, “thành phố sương", “thành phố ngàn hoa"... 
+                            Sở hữu vẻ đẹp nên thơ, trữ tình với những rừng thông bạt ngàn, những cánh đồng hoa cẩm tú cầu xinh xắn, những hàng cây mai anh đào rực rỡ trong gió, thắng cảnh sông, hồ, núi hùng vĩ hay những con suối róc rách nước trẻ…
+                             và không khí mát mẻ, trong lành, Đà Lạt ngày càng thu hút đông đảo khách du lịch trong nước và quốc tế.
+                        </p>
+                        <button class="btn">Khám phá</button>
+                    </div>
+                </div>
+
+
+                <div class="tour-content-item row">
+                    <div class="tour-content-item-img">
+                        <img src="Images/Hoi_An.jpg" alt="">
+                    </div>
+                    <div class="tour-content-item-text">
+                        <h2 class="h2-style">Hội An</h2>
+                        <p class="p-style">Hội An – nơi mà cuộc sống cứ bình lặng như thế. Hội An – nơi mà dường như dòng chảy vô tình của thời gian chẳng thể nào vùi lấp đi cái không khí cổ xưa. 
+                            Những mái ngói cũ phủ đầy rêu phong, những con đường ngập trong sắc đỏ của đèn lồng, những bức hoành phi được chạm trổ tinh vi, tất cả như đưa ta về với một thế giới của vài trăm năm trước. Đó mới chỉ là một phần dung dị ở khu phố cổ Hội An nhưng cũng đã đủ khiến người ta phải đắm say
+                        </p>
+                        <button class="btn">Khám phá</button>
+                    </div>
+                </div>
+
+
+                <div class="tour-content-item row">
+                    <div class="tour-content-item-img">
+                        <img src="Images/DaNang.jpg" alt="">
+                    </div>
+                    <div class="tour-content-item-text">
+                        <h2 class="h2-style">Đà Nẵng</h2>
+                        <p class="p-style">Đà Nẵng nằm giữa ba di sản thế giới: cố đô Huế, phố cổ Hội An và thánh địa Mỹ Sơn. 
+                            Đà Nẵng còn có nhiều danh thắng tuyệt đẹp say lòng du khách như Ngũ Hành Sơn, Bà Nà, bán đảo Sơn Trà, đèo Hải Vân, sông Hàn thơ mộng và cầu quay Sông Hàn – niềm tự hào của thành phố, và biển Mỹ Khê đẹp nhất hành tinh.
+                        </p>
+                        <button class="btn">Khám phá</button>
+                    </div>
+                </div>
+
+
+                <div class="tour-content-item row">
+                    <div class="tour-content-item-img">
+                        <img src="Images/Hue.jpg" alt="">
+                    </div>
+                    <div class="tour-content-item-text">
+                        <h2 class="h2-style">Huế</h2>
+                        <p class="p-style"> 
+                             Huế thì lại là xứ sở mộng mơ, là mảnh đất cố đô dù đã trải qua trăm năm nhưng vẫn nguyên vẻ cổ kính, dịu dàng, đắm thắm như thời gian vẫn luôn đi chậm lại nơi đây.
+                            Là trung tâm của dải đất miền Trung, thành phố Huế còn được thiên nhiên ưu ái khi nằm lọt thỏm giữa muôn vàn cảnh đẹp của biển, sông, núi, đèo…. 
+                            Còn chờ gì nữa mà không mang theo những kinh nghiệm du lịch Huế dưới đây và bắt đầu mơ về một cuộc dạo chơi bình yên, chẳng hề vội vã, chậm rãi thưởng thức vẻ đẹp của mảnh đất kinh kỳ.
+                        <button class="btn">Khám phá</button>
+                    </div>
+                </div>
+
+
+                <div class="tour-content-item row">
+                    <div class="tour-content-item-img">
+                        <img src="Images/QuangBinh.jpg" alt="">
+                    </div>
+                    <div class="tour-content-item-text">
+                        <h2 class="h2-style">Quảng Bình</h2>
+                        <p class="p-style">Du Lịch Phong Nha - Kẻ Bàng là hành trình chiêm ngưỡng thắng cảnh thiên nhiên nguyên sơ mà tạo hóa đã ban tặng cho người dân Quảng Bình, 
+                            một mảnh đất gắn liền với những chiến tích anh hùng lịch sử. Nơi đây, sự giao hòa của rừng nguyên sinh và sông Son, cùng với động khô và động nước tạo nên một bức tranh thuỷ mặc làm say lòng người. 
+                            Phong Nha - Kẻ Bàng đã được tổ chức văn hoá thế giới UNESCO công nhận là di sản thiên nhiên thế giới...
+                        </p>
+                        <button class="btn">Khám phá</button>
+                    </div>
+                </div>
+
+
+                <div class="tour-content-item row">
+                    <div class="tour-content-item-img">
+                        <img src="Images/ha-giang.jpg" alt="">
+                    </div>
+                    <div class="tour-content-item-text">
+                        <h2 class="h2-style">Hà Giang</h2>
+                        <p class="p-style">Hà Giang được thiên nhiên ưu ái cho quần thể rừng - núi - sông, cùng hệ sinh thái đa dạng. Mảnh đất này luôn khiến những du khách phương xa say lòng với những địa danh hùng vĩ như đỉnh Mã Pì Lèng, 
+                            núi đôi Quản Bạ, hẻm vực Tu Sản; cũng như nhiều di tích lịch sử - văn hóa lâu đời như phố cổ và cao nguyên đá Đồng Văn, các bản làng của người dân tộc với văn hóa bản địa đặc sắc. 
+                            Chính vì thế, nếu bạn đang tìm kiếm một chuyến đi vừa “đã mắt”, “bổ kiến thức” vừa đậm tinh thần phượt khám phá thì Hà Giang chính là điểm dừng chân tiếp theo dành cho bạn
+                        </p>
+                        <button class="btn">Khám phá</button>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!--------- ----------Feedback------------------ -->
+
+    <section class="review">
+        <div class="container">
+            <h1 class="h1-style">Phản hồi</h1>
+            <p class="p-style"> <span>&ldquo;</span>Đừng tin lời nói của chúng tôi, hãy đọc những đánh giá tích cực từ khách hàng về dịch vụ của chúng tôi dưới đây! Bạn sẽ không thất vọng đâu<span>&rdquo;</span></p>
+        </p>
+            <div class="review-content row">
+
+                <div class="review-item">
+                    <div class="review-item-text">
+                        <img src="Images/quotes.png" alt="">
+                        <p> <span>&ldquo;</span>Hà Giang đẹp tuyệt vời, lúc đi cứ nghĩ vất vả xa xôi như này đi một lần trong đời cho biết Hà Giang như thế nào là được rồi, nhưng về tới nhà mới thấy nhớ, mới thấy muốn đi lại lần 2 lần 3. <span>&rdquo;</span></p>
+                    </div>
+                    <div class="review-item-img row">
+                        <img src="Images/test1.jpg" alt="">
+                        <div class="review-img-text">
+                            <h2>Lê Hoàng Nam</h2>
+                            <p>Ngày 10/05/2023</p>
+                        </div>
+                        
+                    </div>
+                </div>
+                
+                <div class="review-item">
+                    <div class="review-item-text">
+                        <img src="Images/quotes.png" alt="">
+                        <p> <span>&ldquo;</span>Nổi tiếng thế giới với quần thể hang động Phong Nha - Kẻ Bàng hùng vĩ, Quảng Bình luôn là địa điểm níu chân du khách nước ngoài mỗi khi đặt chân tới Việt Nam.<span>&rdquo;</span></p>
+                    </div>
+                    <div class="review-item-img row">
+                        <img src="Images/test2.jpeg" alt="">
+                        <div class="review-img-text">
+                            <h2>Khoa Pug</h2>
+                            <p>Ngày 12/05/2023</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="review-item">
+                    <div class="review-item-text">
+                        <img src="Images/quotes.png" alt="">
+                        <p> <span>&ldquo;</span>Tôi thực sự hài lòng về trải nghiệm sản phẩm mà công ty mang lại. Chất lượng sản phẩm hoàn hảo, dịch vụ chăm sóc khách hàng tận tâm. Giá cả sản phẩm hợp lý. Tôi sẽ ủng hộ công ty thường xuyên vào thời gian tới.<span>&rdquo;</span></p>
+                    </div>
+                    <div class="review-item-img row">
+                        <img src="Images/test3.jpg" alt="">
+                        <div class="review-img-text">
+                            <h2>Hoa hậu Thuỳ Tiên</h2>
+                            <p>Ngày 11/05/2023</p>
+                        </div>
+                    </div>
+                </div>
+
+                
+            </div>
+        </div>
+    </section>
+
+
+    <!-- ---------------Sign up------------- -->
+<section class="signup">
+    <h1 class="h1-style">Đăng kí ngay</h1>
+    <div class="signup-content">
+        <input type="text" placeholder="Nhập địa chỉ Email">
+        <button class="btn">Gửi</button>
+    </div>
+
+</section>
+
+
+<!-- ---------------CONTACT------------- -->
+
+<section class="contact">
+    <div class="container">
+        <h1 class="h1-style">Liên hệ</h1>
+        <div class="contact-content-top row">
+            
+            <div class="contact-content-item">
+                <input type="text" placeholder="Tên">
+            </div>
+
+            <div class="contact-content-item">
+                <input type="text" placeholder="Địa chỉ">
+            </div>
+
+            <div class="contact-content-item">
+                <input type="text" placeholder="Email">
+            </div>
+
+            <div class="contact-content-item">
+                <input type="text" placeholder="Số điện thoại">
+            </div>
+
+        </div>
+
+        <div class="contact-content-bottom">
+            <textarea placeholder="Nội dung"></textarea>
+            <button class="btn">Gửi</button>
+
+        </div>
+    </div>
+</section>
+<footer class="footer">
+    <div class="footer-bottom">
+        <div class="container">
+            <div class="copyright-text">
+                <p>Copyright © 2023 <a target="_blank" href="#">GALAXY</a> All Rights Reserved.</p>
+            </div>
+        </div>
+
+        <div class="footer-content">
+            <ul class="footer-list address-content" type="none">
+                <li><i class="p-style"></i> Địa chỉ: đường Trần Đại Nghĩa, quận Ngũ Hành Sơn, Đà Nẵng
+                </li>
+                <li><i class="p-style"></i>Gmail: <a href="#">chienn.22git@vku.udn.vn </a></li>
+                <li>
+                    <i class="p-style"></i> Phone:+84 776232977
+                </li>
+            </ul>
+            <div class="payment mt-25 bdr-top pt-30">
+                <a href="#"><img class="img" src="" alt=""></a>
+            </div>
+        </div>
+        <!-- Container End -->
+    </div>
+</footer>
+
+
+
+
+<script src="script.js"></script>    
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+</body>
+</html>
